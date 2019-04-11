@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset = 'UTF-8'>
+		<title>Search</title>
+	</head>
+	<body>
+		<h1>Search The Oscars Database</h1>
+		<form action = "oscars.php" method = "GET">				
+			<fieldset>
+				<legend style = "font-size:16pt"><strong>Criteria</strong></legend>
+			<table>
+			<tr>
+				<td>Year</td><td><input type="text" name = 'year' placeholder = "Enter criteria or leave blank" size="23" >
+				<strong>1960 - 2010 inclusive</strong></input></td>
+			</tr>
+			<tr>
+				<td>Category</td><td><input type="text" name = 'category' placeholder = "Enter criteria or leave blank" size="23"></input></td>
+			</tr>
+			<tr>
+				<td>Info</td><td><input type="text" name = 'info' placeholder = "Enter criteria or leave blank" size="23"></input></td>
+			</tr>
+			<tr>
+				<td>Nominee</td><td><input type="text" name = 'nominee' placeholder = "Enter criteria or leave blank" size="23"></input></td>
+			</tr>
+			</table></br>
+				<input type="radio" name = "nomination" value = "all" checked>All Nominations
+				<input type="radio" name = "nomination" value = "win">Wining Nomination Only
+				<input type="radio" name = "nomination" value = "lose">Losing Nominations Only<br></br>
+				<input type = "submit" name = "submit" value = "Submit">
+
+			</fieldset>
+		</form>
+	</body>
+</html>
